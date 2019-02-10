@@ -103,32 +103,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
-                                <rect key="frame" x="16" y="64" width="344" height="426"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
+                                <rect key="frame" x="16" y="64" width="330" height="426"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="28.666666666666668"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Cqs-Vk-0lJ" secondAttribute="height" multiplier="172:15" id="0JA-27-uev"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="vht-w5-DXs">
-                                        <rect key="frame" x="12" y="38" width="320" height="320"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="330" placeholderIntrinsicHeight="330" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="vht-w5-DXs">
+                                        <rect key="frame" x="0.0" y="52.666666666666657" width="330" height="309.33333333333337"/>
                                         <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="vht-w5-DXs" secondAttribute="height" multiplier="1:1" id="ifS-hR-yOP"/>
-                                        </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="6zR-HY-Zef" appends="YES" id="wPc-Ej-Bht"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t56-bQ-7Yp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="46" y="366" width="252" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t56-bQ-7Yp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="386" width="180" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="U1z-MF-J6V"/>
+                                            <constraint firstAttribute="width" constant="180" id="ucU-RI-JbM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                                <size key="value" width="30" height="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="t56-bQ-7Yp" firstAttribute="leading" secondItem="2cd-wZ-Gpp" secondAttribute="leading" constant="46" id="2rh-nY-ESg"/>
+                                    <constraint firstItem="t56-bQ-7Yp" firstAttribute="leading" secondItem="2cd-wZ-Gpp" secondAttribute="leading" constant="75" id="2rh-nY-ESg"/>
+                                    <constraint firstItem="vht-w5-DXs" firstAttribute="top" secondItem="Cqs-Vk-0lJ" secondAttribute="bottom" constant="8" id="4oH-xP-CEu"/>
                                     <constraint firstAttribute="trailing" secondItem="Cqs-Vk-0lJ" secondAttribute="trailing" id="IJs-2u-fom"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cqs-Vk-0lJ" secondAttribute="trailing" id="Js8-fu-tN9"/>
+                                    <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="leading" secondItem="2cd-wZ-Gpp" secondAttribute="leading" id="Lvs-ON-A55"/>
+                                    <constraint firstAttribute="trailing" secondItem="t56-bQ-7Yp" secondAttribute="trailing" constant="75" id="eB4-sD-rMg"/>
+                                    <constraint firstItem="t56-bQ-7Yp" firstAttribute="top" secondItem="vht-w5-DXs" secondAttribute="bottom" constant="8" id="skI-2A-5x3"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLp-76-56v">
@@ -211,7 +228,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2350" y="-1018"/>
+            <point key="canvasLocation" x="2349.5999999999999" y="-1018.2266009852217"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="600-hA-Ktm">
@@ -422,8 +439,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0Ia-aT-hA2"/>
-        <segue reference="57M-9m-vzq"/>
+        <segue reference="esQ-BC-z4b"/>
         <segue reference="OYG-Wr-wrS"/>
-        <segue reference="qgx-Fd-GgU"/>
+        <segue reference="Xkd-vl-CxC"/>
     </inferredMetricsTieBreakers>
 </document>
