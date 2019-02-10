@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
-                                <rect key="frame" x="20" y="108" width="374" height="426"/>
+                                <rect key="frame" x="20" y="64" width="374" height="426"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
@@ -187,6 +187,14 @@
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <segue destination="mFB-Ae-jQC" kind="presentation" identifier="SearchSegue" id="6Jv-wp-Vb0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-CJ-6OU">
+                                <rect key="frame" x="12" y="780" width="63" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="saved"/>
+                                <connections>
+                                    <segue destination="tru-c3-rzc" kind="presentation" identifier="SavedSegue" id="qgx-Fd-GgU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,9 +335,11 @@
         <image name="Foodprint-ilovepdf-compressed-2" width="1042" height="2256"/>
         <image name="cameralarge" width="121.19999694824219" height="121.19999694824219"/>
         <image name="defaultPhoto" width="1080" height="1080"/>
+        <image name="saved" width="63.119998931884766" height="84.239997863769531"/>
         <image name="search" width="65.760002136230469" height="79.680000305175781"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OYG-Wr-wrS"/>
+        <segue reference="qgx-Fd-GgU"/>
     </inferredMetricsTieBreakers>
 </document>
