@@ -37,7 +37,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ami-MF-hae" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ami-MF-hae" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <rect key="frame" x="97" y="37" width="252" height="60"/>
                                         </stackView>
                                     </subviews>
@@ -89,7 +89,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
                                 <rect key="frame" x="20" y="108" width="374" height="426"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
@@ -108,7 +108,7 @@
                                             <outletCollection property="gestureRecognizers" destination="6zR-HY-Zef" appends="YES" id="wPc-Ej-Bht"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t56-bQ-7Yp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t56-bQ-7Yp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                         <rect key="frame" x="61" y="366" width="252" height="60"/>
                                     </stackView>
                                 </subviews>
@@ -166,9 +166,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbL-Iz-lKI">
-                                <rect key="frame" x="146.5" y="755" width="121" height="121"/>
+                                <rect key="frame" x="156.5" y="755" width="121" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="121" id="AY9-f7-9XS"/>
+                                    <constraint firstAttribute="width" secondItem="gbL-Iz-lKI" secondAttribute="height" multiplier="1:1" id="IrW-K8-eGO"/>
                                     <constraint firstAttribute="height" constant="121" id="jU2-EA-kn9"/>
                                 </constraints>
                                 <state key="normal" image="cameralarge"/>
@@ -178,7 +179,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-Yz-RNV">
+<<<<<<< HEAD
                                 <rect key="frame" x="330" y="771" width="65" height="79"/>
+=======
+                                <rect key="frame" x="317" y="790" width="43" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1dO-VG-uk2"/>
+                                    <constraint firstAttribute="width" constant="43" id="KpC-hd-58B"/>
+                                </constraints>
+>>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <segue destination="Wob-KX-NuT" kind="presentation" identifier="SearchSegue" id="kfW-nU-afC"/>
@@ -188,8 +197,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gbL-Iz-lKI" secondAttribute="bottom" constant="20" symbolic="YES" id="10u-4l-RIK"/>
+<<<<<<< HEAD
                             <constraint firstAttribute="trailing" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="19" id="OPX-h0-Xg5"/>
                             <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="12" id="SCM-VL-THL"/>
+=======
+                            <constraint firstAttribute="trailingMargin" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="34" id="3gB-wT-4PX"/>
+                            <constraint firstItem="q3d-Yz-RNV" firstAttribute="leading" secondItem="gbL-Iz-lKI" secondAttribute="trailing" constant="39.5" id="NXD-Qe-TRx"/>
+                            <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="8" id="pFN-Za-6uA"/>
+>>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
                             <constraint firstItem="gbL-Iz-lKI" firstAttribute="centerX" secondItem="Ysf-XT-LKA" secondAttribute="centerX" id="wa0-bz-Gcy"/>
                         </constraints>
                     </view>
@@ -252,6 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kp-cw-0RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-1481.1594202898552" y="-700.44642857142856"/>
         </scene>
         <!--View Controller-->
@@ -270,6 +286,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X35-4B-Gm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+=======
+            <point key="canvasLocation" x="-707" y="-513"/>
+>>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
         </scene>
     </scenes>
     <resources>
