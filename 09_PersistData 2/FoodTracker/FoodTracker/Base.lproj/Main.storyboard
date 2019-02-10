@@ -189,9 +189,12 @@
                                     <segue destination="mFB-Ae-jQC" kind="presentation" identifier="SearchSegue" id="6Jv-wp-Vb0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-CJ-6OU">
-                                <rect key="frame" x="12" y="780" width="63" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-CJ-6OU">
+                                <rect key="frame" x="74" y="780" width="43" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="pdi-TG-8kU"/>
+                                    <constraint firstAttribute="width" constant="43" id="tfA-0H-vko"/>
+                                </constraints>
                                 <state key="normal" image="saved"/>
                                 <connections>
                                     <segue destination="tru-c3-rzc" kind="presentation" identifier="SavedSegue" id="qgx-Fd-GgU"/>
@@ -204,6 +207,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="34" id="3gB-wT-4PX"/>
                             <constraint firstItem="q3d-Yz-RNV" firstAttribute="leading" secondItem="gbL-Iz-lKI" secondAttribute="trailing" constant="39.5" id="NXD-Qe-TRx"/>
                             <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="8" id="pFN-Za-6uA"/>
+                            <constraint firstItem="gbL-Iz-lKI" firstAttribute="leading" secondItem="BdM-CJ-6OU" secondAttribute="trailing" constant="39.5" id="qcJ-KG-qZY"/>
                             <constraint firstItem="gbL-Iz-lKI" firstAttribute="centerX" secondItem="Ysf-XT-LKA" secondAttribute="centerX" id="wa0-bz-Gcy"/>
                         </constraints>
                     </view>
