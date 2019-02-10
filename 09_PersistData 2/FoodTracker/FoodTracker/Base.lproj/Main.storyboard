@@ -321,6 +321,13 @@
                                     <outletCollection property="gestureRecognizers" destination="yrr-06-kgG" appends="YES" id="ZYp-JM-Tyx"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP3-1D-7PD">
+                                <rect key="frame" x="172" y="740" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Lhs-p8-gZq" kind="presentation" identifier="backtoscan" id="IGU-eo-wmj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -332,11 +339,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb0-YK-8I0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="yrr-06-kgG">
-                    <connections>
-                        <segue destination="Lhs-p8-gZq" kind="presentation" id="3Wa-Le-bNl"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="yrr-06-kgG"/>
             </objects>
             <point key="canvasLocation" x="-2178" y="1037"/>
         </scene>
@@ -403,12 +406,50 @@
                                     <outlet property="delegate" destination="mFB-Ae-jQC" id="XaK-qV-8rT"/>
                                 </connections>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBv-JH-dF8">
+                                <rect key="frame" x="16" y="725" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="1Re-UW-qry"/>
+                                    <constraint firstAttribute="height" constant="53" id="VaG-MQ-2An"/>
+                                </constraints>
+                                <state key="normal" image="saved"/>
+                                <connections>
+                                    <segue destination="tru-c3-rzc" kind="presentation" identifier="searchtosaved" id="wGE-Ha-pGH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYu-3w-va5">
+                                <rect key="frame" x="161" y="725" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="SUT-z2-oPu"/>
+                                    <constraint firstAttribute="height" constant="53" id="emz-Nz-hFC"/>
+                                </constraints>
+                                <state key="normal" image="camerasmall"/>
+                                <connections>
+                                    <segue destination="Lhs-p8-gZq" kind="presentation" identifier="searchtocamera" id="0vP-NV-T7P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-1A-yI3">
+                                <rect key="frame" x="306" y="725" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="3t8-PX-SdI"/>
+                                    <constraint firstAttribute="height" constant="53" id="vrj-N5-g4B"/>
+                                </constraints>
+                                <state key="normal" image="search"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VBv-JH-dF8" firstAttribute="bottom" secondItem="5Y9-SV-xwj" secondAttribute="top" id="5O9-ma-epG"/>
+                            <constraint firstItem="fYu-3w-va5" firstAttribute="leading" secondItem="VBv-JH-dF8" secondAttribute="trailing" constant="92" id="HFa-6b-f1J"/>
                             <constraint firstItem="wig-3f-kzW" firstAttribute="leading" secondItem="vKY-Gm-ntY" secondAttribute="leading" id="Lrh-0Q-2rY"/>
                             <constraint firstAttribute="trailing" secondItem="wig-3f-kzW" secondAttribute="trailing" id="R7o-ag-pgE"/>
+                            <constraint firstItem="qJe-1A-yI3" firstAttribute="leading" secondItem="fYu-3w-va5" secondAttribute="trailing" constant="92" id="USK-Jr-WiO"/>
+                            <constraint firstItem="VBv-JH-dF8" firstAttribute="top" secondItem="qJe-1A-yI3" secondAttribute="top" id="lzQ-Ib-kOp"/>
+                            <constraint firstItem="VBv-JH-dF8" firstAttribute="leading" secondItem="vKY-Gm-ntY" secondAttribute="leadingMargin" id="m3o-aR-0mH"/>
+                            <constraint firstItem="fYu-3w-va5" firstAttribute="leading" secondItem="VBv-JH-dF8" secondAttribute="trailing" constant="92" id="uHp-bJ-KaV"/>
                             <constraint firstItem="wig-3f-kzW" firstAttribute="top" secondItem="blB-tb-YaZ" secondAttribute="bottom" constant="20" id="whQ-sK-sqT"/>
+                            <constraint firstItem="qJe-1A-yI3" firstAttribute="leading" secondItem="fYu-3w-va5" secondAttribute="trailing" constant="92" id="yfI-yz-Lr2"/>
+                            <constraint firstItem="5Y9-SV-xwj" firstAttribute="top" secondItem="fYu-3w-va5" secondAttribute="bottom" id="z6Y-1K-WSd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -426,7 +467,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2178" y="-927"/>
+            <point key="canvasLocation" x="-2178.4000000000001" y="-927.33990147783254"/>
         </scene>
     </scenes>
     <resources>
@@ -439,8 +480,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0Ia-aT-hA2"/>
-        <segue reference="esQ-BC-z4b"/>
+
+        <segue reference="IGU-eo-wmj"/>
         <segue reference="OYG-Wr-wrS"/>
-        <segue reference="Xkd-vl-CxC"/>
+        <segue reference="wGE-Ha-pGH"/>
+
     </inferredMetricsTieBreakers>
 </document>
