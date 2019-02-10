@@ -80,7 +80,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
+<<<<<<< HEAD
                                 <rect key="frame" x="16" y="84" width="343" height="410"/>
+=======
+                                <rect key="frame" x="16" y="84" width="343" height="426"/>
+>>>>>>> f3186f6f5693453ca32d5120fcc3254d836f3dc7
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -99,7 +103,11 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t56-bQ-7Yp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+<<<<<<< HEAD
                                         <rect key="frame" x="45.5" y="366" width="252" height="44"/>
+=======
+                                        <rect key="frame" x="45.5" y="366" width="252" height="60"/>
+>>>>>>> f3186f6f5693453ca32d5120fcc3254d836f3dc7
                                     </stackView>
                                 </subviews>
                                 <constraints>
