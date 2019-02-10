@@ -17,9 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="0pc-IP-Gc2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Saved Favorites" id="ISP-e8-Rp2">
+                                    <barButtonItem key="leftBarButtonItem" style="plain" id="EJV-Zo-il6">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oXt-df-3vm">
+                                            <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Scan"/>
+                                        </button>
+                                        <connections>
+                                            <segue destination="Lhs-p8-gZq" kind="presentation" identifier="searchtoscan" id="57M-9m-vzq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="110" id="qEV-99-3m6" customClass="MealTableViewCell" customModule="FoodTracker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qEV-99-3m6" id="R47-cT-ZpS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="109.66666666666667"/>
@@ -67,13 +85,7 @@
                             <outlet property="delegate" destination="tru-c3-rzc" id="qn9-Zg-FgN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Your Meals" id="EhK-wQ-Gxn">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wiQ-l3-IJL">
-                            <connections>
-                                <segue destination="jxq-Qe-lqw" kind="presentation" identifier="AddItem" id="Rc3-te-viX"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Your Meals" id="EhK-wQ-Gxn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHp-yK-be7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,8 +422,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0Ia-aT-hA2"/>
-        <segue reference="esQ-BC-z4b"/>
+        <segue reference="57M-9m-vzq"/>
         <segue reference="OYG-Wr-wrS"/>
-        <segue reference="Xkd-vl-CxC"/>
+        <segue reference="qgx-Fd-GgU"/>
     </inferredMetricsTieBreakers>
 </document>
