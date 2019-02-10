@@ -26,5 +26,8 @@ class CameraViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func CameraButton_TouchUpInside(_ sender: Any) {
+        performSegue(withIdentifier: "ShowPhoto_Segue", sender: nil)
+    }
+    
 }
