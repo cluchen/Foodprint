@@ -179,15 +179,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-Yz-RNV">
-<<<<<<< HEAD
-                                <rect key="frame" x="330" y="771" width="65" height="79"/>
-=======
+
                                 <rect key="frame" x="317" y="790" width="43" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="1dO-VG-uk2"/>
                                     <constraint firstAttribute="width" constant="43" id="KpC-hd-58B"/>
                                 </constraints>
->>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
+
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <segue destination="Wob-KX-NuT" kind="presentation" identifier="SearchSegue" id="kfW-nU-afC"/>
@@ -197,14 +195,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gbL-Iz-lKI" secondAttribute="bottom" constant="20" symbolic="YES" id="10u-4l-RIK"/>
-<<<<<<< HEAD
-                            <constraint firstAttribute="trailing" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="19" id="OPX-h0-Xg5"/>
-                            <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="12" id="SCM-VL-THL"/>
-=======
+
                             <constraint firstAttribute="trailingMargin" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="34" id="3gB-wT-4PX"/>
                             <constraint firstItem="q3d-Yz-RNV" firstAttribute="leading" secondItem="gbL-Iz-lKI" secondAttribute="trailing" constant="39.5" id="NXD-Qe-TRx"/>
                             <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="8" id="pFN-Za-6uA"/>
->>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
+
                             <constraint firstItem="gbL-Iz-lKI" firstAttribute="centerX" secondItem="Ysf-XT-LKA" secondAttribute="centerX" id="wa0-bz-Gcy"/>
                         </constraints>
                     </view>
@@ -300,28 +295,9 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-1481.1594202898552" y="-700.44642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5jw-e1-cL9">
-            <objects>
-                <viewController id="Wob-KX-NuT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5bJ-q8-IN4"/>
-                        <viewControllerLayoutGuide type="bottom" id="5t8-ra-LX5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NUQ-4M-Cfw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X35-4B-Gm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-=======
+
             <point key="canvasLocation" x="-707" y="-513"/>
->>>>>>> 04005873c373273df3c7ec9f3bddb51d1b05d7b6
+
         </scene>
     </scenes>
     <resources>
