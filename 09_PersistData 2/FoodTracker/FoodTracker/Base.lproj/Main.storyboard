@@ -253,10 +253,43 @@
                     <view key="view" contentMode="scaleToFill" id="vKY-Gm-ntY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search for item" translatesAutoresizingMaskIntoConstraints="NO" id="wig-3f-kzW">
+                                <rect key="frame" x="0.0" y="64" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wig-3f-kzW" secondAttribute="height" multiplier="207:28" id="EXm-B5-Wpc"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="mFB-Ae-jQC" id="XaK-qV-8rT"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wig-3f-kzW" firstAttribute="leading" secondItem="vKY-Gm-ntY" secondAttribute="leading" id="Lrh-0Q-2rY"/>
+                            <constraint firstAttribute="trailing" secondItem="wig-3f-kzW" secondAttribute="trailing" id="R7o-ag-pgE"/>
+                            <constraint firstItem="wig-3f-kzW" firstAttribute="top" secondItem="blB-tb-YaZ" secondAttribute="bottom" constant="20" id="whQ-sK-sqT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="PIn-aG-nbu" id="vig-Bm-djr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kp-cw-0RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="PIn-aG-nbu">
+                    <connections>
+                        <outlet property="delegate" destination="mFB-Ae-jQC" id="CDQ-dq-j5l"/>
+                        <outlet property="searchBar" destination="wig-3f-kzW" id="BrM-OU-UCg"/>
+                        <outlet property="searchContentsController" destination="mFB-Ae-jQC" id="5lC-wK-8Aa"/>
+                        <outlet property="searchResultsDataSource" destination="mFB-Ae-jQC" id="1FH-L8-fXU"/>
+                        <outlet property="searchResultsDelegate" destination="mFB-Ae-jQC" id="hbD-Ue-Kbd"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-707" y="-513"/>
         </scene>
