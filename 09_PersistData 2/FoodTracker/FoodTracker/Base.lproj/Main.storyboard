@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L8g-sl-WVK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lhs-p8-gZq">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -174,6 +174,7 @@
                                 <state key="normal" image="cameralarge"/>
                                 <connections>
                                     <action selector="CameraButton_TouchUpInside:" destination="xHa-SX-cxp" eventType="touchUpInside" id="tzT-LH-WqM"/>
+                                    <segue destination="L8g-sl-WVK" kind="presentation" identifier="ShowPhoto_Segue" id="YPw-wM-7eG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,9 +184,6 @@
                             <constraint firstItem="gbL-Iz-lKI" firstAttribute="centerX" secondItem="Ysf-XT-LKA" secondAttribute="centerX" id="wa0-bz-Gcy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="L8g-sl-WVK" kind="presentation" identifier="ShowPhoto_Segue" id="ltB-eg-vQd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IW-aN-0bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xHa-SX-cxp" userLabel="Exit" sceneMemberID="exit"/>
@@ -197,6 +195,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L8g-sl-WVK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="bi1-Wv-7Q7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxY-ML-mWY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -234,6 +233,6 @@
         <image name="defaultPhoto" width="1080" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OYG-Wr-wrS"/>
+        <segue reference="bye-1r-UsD"/>
     </inferredMetricsTieBreakers>
 </document>
