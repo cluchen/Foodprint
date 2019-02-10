@@ -165,19 +165,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbL-Iz-lKI">
-                                <rect key="frame" x="156.5" y="755" width="121" height="121"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="AY9-f7-9XS"/>
-                                    <constraint firstAttribute="width" secondItem="gbL-Iz-lKI" secondAttribute="height" multiplier="1:1" id="IrW-K8-eGO"/>
-                                    <constraint firstAttribute="height" constant="121" id="jU2-EA-kn9"/>
-                                </constraints>
-                                <state key="normal" image="cameralarge"/>
-                                <connections>
-                                    <action selector="CameraButton_TouchUpInside:" destination="xHa-SX-cxp" eventType="touchUpInside" id="tzT-LH-WqM"/>
-                                    <segue destination="Syf-nW-Hhi" kind="presentation" identifier="ShowPhotoSegue" id="eaG-sg-q2G"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-Yz-RNV">
                                 <rect key="frame" x="317" y="790" width="43" height="64"/>
                                 <constraints>
@@ -189,8 +176,8 @@
                                     <segue destination="mFB-Ae-jQC" kind="presentation" identifier="SearchSegue" id="6Jv-wp-Vb0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-CJ-6OU">
-                                <rect key="frame" x="74" y="780" width="43" height="84"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdM-CJ-6OU">
+                                <rect key="frame" x="55" y="790" width="62" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="pdi-TG-8kU"/>
                                     <constraint firstAttribute="width" constant="43" id="tfA-0H-vko"/>
@@ -198,6 +185,19 @@
                                 <state key="normal" image="saved"/>
                                 <connections>
                                     <segue destination="tru-c3-rzc" kind="presentation" identifier="SavedSegue" id="qgx-Fd-GgU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbL-Iz-lKI">
+                                <rect key="frame" x="156.5" y="755" width="121" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="AY9-f7-9XS"/>
+                                    <constraint firstAttribute="width" secondItem="gbL-Iz-lKI" secondAttribute="height" multiplier="1:1" id="IrW-K8-eGO"/>
+                                    <constraint firstAttribute="height" constant="121" id="jU2-EA-kn9"/>
+                                </constraints>
+                                <state key="normal" image="cameralarge"/>
+                                <connections>
+                                    <action selector="CameraButton_TouchUpInside:" destination="xHa-SX-cxp" eventType="touchUpInside" id="tzT-LH-WqM"/>
+                                    <segue destination="Syf-nW-Hhi" kind="presentation" identifier="ShowPhotoSegue" id="eaG-sg-q2G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -232,6 +232,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foodprint-ilovepdf-compressed-2" translatesAutoresizingMaskIntoConstraints="NO" id="hkz-1O-wom">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yrr-06-kgG" appends="YES" id="ZYp-JM-Tyx"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -244,8 +247,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb0-YK-8I0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="yrr-06-kgG">
+                    <connections>
+                        <segue destination="Lhs-p8-gZq" kind="presentation" id="3Wa-Le-bNl"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1418.840579710145" y="765.40178571428567"/>
+            <point key="canvasLocation" x="-2735" y="646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v7c-Cq-WhV">
@@ -334,13 +342,6 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-707" y="-513"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="PWv-Lz-oXh">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="0SM-tk-gYU" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfn-Jz-Zyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
