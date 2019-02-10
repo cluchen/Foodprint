@@ -174,21 +174,22 @@
                                 <state key="normal" image="cameralarge"/>
                                 <connections>
                                     <action selector="CameraButton_TouchUpInside:" destination="xHa-SX-cxp" eventType="touchUpInside" id="tzT-LH-WqM"/>
-                                    <segue destination="L8g-sl-WVK" kind="presentation" identifier="ShowPhoto_Segue" id="YPw-wM-7eG"/>
+                                    <segue destination="mFB-Ae-jQC" kind="presentation" identifier="ShowPhotoSegue" id="X2M-5c-zbe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-Yz-RNV">
-                                <rect key="frame" x="341" y="793" width="53" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-Yz-RNV">
+                                <rect key="frame" x="330" y="771" width="65" height="79"/>
                                 <state key="normal" image="search"/>
                                 <connections>
-                                    <segue destination="mFB-Ae-jQC" kind="presentation" identifier="Search_Segue" id="voV-Ic-77o"/>
+                                    <segue destination="Wob-KX-NuT" kind="presentation" identifier="SearchSegue" id="kfW-nU-afC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gbL-Iz-lKI" secondAttribute="bottom" constant="20" symbolic="YES" id="10u-4l-RIK"/>
+                            <constraint firstAttribute="trailing" secondItem="q3d-Yz-RNV" secondAttribute="trailing" constant="19" id="OPX-h0-Xg5"/>
+                            <constraint firstItem="IRq-sX-vcb" firstAttribute="top" secondItem="q3d-Yz-RNV" secondAttribute="bottom" constant="12" id="SCM-VL-THL"/>
                             <constraint firstItem="gbL-Iz-lKI" firstAttribute="centerX" secondItem="Ysf-XT-LKA" secondAttribute="centerX" id="wa0-bz-Gcy"/>
                         </constraints>
                     </view>
@@ -251,7 +252,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kp-cw-0RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1481" y="-700"/>
+            <point key="canvasLocation" x="-1481.1594202898552" y="-700.44642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5jw-e1-cL9">
+            <objects>
+                <viewController id="Wob-KX-NuT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bJ-q8-IN4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5t8-ra-LX5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NUQ-4M-Cfw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X35-4B-Gm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
